@@ -18,5 +18,5 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/vender/bundler
-/vender/ruby
+/vendor/bundler
+/vendor/ruby
