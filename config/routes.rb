@@ -1,4 +1,10 @@
 Cem::Application.routes.draw do
+  # get  'post'        => 'post#index'
+  # get  'post/new'    => 'post#new'
+  # post 'post/create' => 'post#create'
+
+  resources :posts
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

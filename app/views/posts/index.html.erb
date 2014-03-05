@@ -1,0 +1,21 @@
+<h1>posts</h1>
+
+<table border='1'>
+  <thead>
+    <tr>
+      <th>タイトル</th>
+      <th>本文</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @post.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.main %></td>
+      <td><%= link_to "編集", edit_post_path(post.id) %> | <%= link_to "削除", post_path(post.id), method: :delete %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to "追加", new_post_path %>
